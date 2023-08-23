@@ -6,11 +6,11 @@ namespace TeoremaDeTales
     {
         static void Main(string[] args)
         {
-            // Solicita as medidas dos segmentos do primeiro triângulo
-            Console.WriteLine("Digite as medidas dos segmentos do primeiro triângulo:");
+            // Solicita as medidas dos segmentos do primeiro triangulo
+            Console.WriteLine("Digite as medidas dos segmentos do primeiro triangulo:");
             double a1, b1, a2, b2;
 
-            // Obtém as medidas dos segmentos do primeiro triângulo usando a função TryGetValidInput
+            // Obtém as medidas dos segmentos do primeiro triangulo usando a função TryGetValidInput
             if (TryGetValidInput(out a1) && TryGetValidInput(out b1) &&
                 TryGetValidInput(out a2) && TryGetValidInput(out b2))
             {
@@ -22,17 +22,17 @@ namespace TeoremaDeTales
                     double proporcaoB = b1 / b2;
 
                     // Exibe as proporções formatadas com duas casas decimais
-                    Console.WriteLine($"Proporção entre os lados A: {proporcaoA:F2}");
-                    Console.WriteLine($"Proporção entre os lados B: {proporcaoB:F2}");
+                    Console.WriteLine($"Proporcao entre os lados A: {proporcaoA:F2}");
+                    Console.WriteLine($"Proporcao entre os lados B: {proporcaoB:F2}");
                 }
                 else
                 {
-                    Console.WriteLine("Não é possível calcular a proporção quando um dos lados é zero.");
+                    Console.WriteLine("Nao é possível calcular a proporção quando um dos lados e zero.");
                 }
             }
             else
             {
-                Console.WriteLine("Entrada inválida. Certifique-se de inserir números válidos.");
+                Console.WriteLine("Entrada invalida. Certifique-se de inserir numeros validos.");
             }
         }
 
